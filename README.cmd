@@ -248,6 +248,10 @@
             <li>Lanzamiento de la versión de foros 🎉</li>
             <li>Próximamente: sección de proyectos colaborativos (premium)</li>
             <li>Nuevos tutoriales de validación de ideas</li>
+             <a href="https://drive.google.com/drive/folders/1srht2p85mdBJXTpn5ZgYmk6Y0CiH6N9M" 
+              target="_blank">
+            Ver carpeta en Drive
+           </a>
           </ul>
         </div>
       </section>
