@@ -142,7 +142,7 @@
 <body>
 
   <!-- POPUP -->
-  <div id="popup">
+ <div id="popup">
     <div class="popup-card">
       <h3>¡Bienvenido a Inicia!</h3>
       <p> Esta página funciona como una presentación de la app, mostrando sus funciones principales para que el usuario conozca de qué trata antes de usarla.</p>
