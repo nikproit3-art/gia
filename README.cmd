@@ -95,63 +95,68 @@
     @media (max-width:940px){ main{grid-template-columns:1fr} .logo{width:56px;height:56px} }
 
     /* POPUP */
-  /* Fondo del popup */
-  #popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    display: none;                /* Oculto por defecto */
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
+    /* POPUP */
+    #popup {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      z-index: 9999;
+    }
 
-  /* Tarjeta del popup */
-  #popup .popup-card {
-    background: white;
-    padding: 32px;
-    border-radius: 14px;
-    max-width: 520px;              /* Popup grande */
-    width: 90%;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    text-align: center;
-    animation: pop 0.25s ease;
-  }
+    #popup .popup-card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      width: 420px;       /* TAMAÑO RECTANGULAR */
+      max-width: 90%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      text-align: center;
+      animation: pop 0.25s ease;
+    }
 
-  /* Animación */
-  @keyframes pop {
-    from { transform: scale(0.6); opacity: 0; }
-    to   { transform: scale(1); opacity: 1; }
-  }
+    @keyframes pop {
+      from { transform: scale(0.6); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
 
-  /* Botón */
-  #popup button{
-    margin-top: 18px;
-    background: #a78bfa;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    width: 100%;
-    font-weight: 700;
-    cursor: pointer;
-  }
+    #popup button{
+      margin-top: 18px;
+      background: var(--accent);
+      padding: 12px 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      width: 100%;
+      font-weight: 700;
+      cursor: pointer;
+    }
 
+    #popup a{
+      display: block;
+      margin-top: 10px;
+      color: #4a1eb8;
+      font-weight: 700;
+      text-decoration: none;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- POPUP -->
- <div id="popup">
+  <div id="popup">
     <div class="popup-card">
+
       <h3>¡Bienvenido a Inicia!</h3>
-      <p> Esta página funciona como una presentación de la app, mostrando sus funciones principales para que el usuario conozca de qué trata antes de usarla.</p>
-      
-       <a href="https://drive.google.com/drive/folders/1srht2p85mdBJXTpn5ZgYmk6Y0CiH6N9M" target="_blank">
-      <button style="margin-top:12px; background:#4f46e5; color:white; padding:10px 14px; border:none; border-radius:10px; cursor:pointer; width:100%;">
+      <p>Esta página es una presentación de la app mostrando sus funciones principales.</p>
+
+      <a href="https://drive.google.com/drive/folders/1srht2p85mdBJXTpn5ZgYmk6Y0CiH6N9M" target="_blank">
         Abrir carpeta en Drive
-      </button>
-    </a>
+      </a>
 
       <button onclick="closePopup()">Cerrar</button>
     </div>
